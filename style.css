@@ -1,0 +1,174 @@
+body {
+    background-image: url('gym111.jpg')
+}
+
+.all {
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'content content content'
+    'sidebar info-container infocontainer'
+    'result result result'
+    'resultcontainer resultcontainer resultcontainer';
+
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.header {
+    border-radius: 30px;
+    grid-area: header;
+    border: 2px solid grey;
+    padding: 20px 30px;
+    text-align: center;
+    background-color: white;
+    background-color: rgb(108, 69, 180);
+    color: yellow
+}
+
+.content {
+    border-radius: 30px;
+    grid-area: content;
+    border: 2px solid grey;
+    padding: 1px 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: medium;
+    background-color: yellow;
+    color: rgb(108, 69, 180);
+}
+
+.sidebar {
+    border-radius: 30px;
+    grid-area: sidebar;
+    width: 80%;
+    border: 2px solid grey;
+    margin-right: 16px;
+    padding: 20px 30px;
+    background-color: rgba(250, 250, 143, 0.911);
+}
+
+.infocontainer {
+    border-radius: 30px;
+    grid-area: infocontainer;
+    width: 700px;
+    border: 2px solid grey;
+    padding: 20px 30px;
+    font-size: xx-large;
+    background-color: rgba(250, 250, 143, 0.911)
+}
+
+#gender {
+    font-size: x-large;
+    margin-bottom: 12px;
+}
+
+#height {
+    font-size: x-large;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.choose {
+    margin-top: 15px;
+    font-size: x-large;
+}
+
+.age {
+    margin: 10px 20px;
+    font-size: x-large;
+}
+
+.weight {
+    font-size: x-large;
+    margin: 10px 20px;
+}
+
+#activeness {
+    font-size: x-large;
+    margin: 10px 20px;
+}
+
+#activeness:hover {
+    cursor: pointer;
+}
+
+.change {
+    font-size: x-large;
+    margin-left: 18px;
+}
+
+.submit {
+    background-color: rgb(58, 56, 56);
+    border-radius: 20px;
+    font-size: xx-large;
+    color: white;
+    padding: 12px 20px;
+}
+
+.submit:hover {
+    cursor: pointer;
+    color: yellow;
+    background-color: black;
+}
+
+.changeoption:hover {
+    cursor: pointer;
+}
+
+.button {
+    margin-top: 20px;
+    justify-content: center;
+}
+
+:required {
+    color: blue;
+}
+
+.resultcontainer {
+    border-radius: 20px;
+    grid-area: resultcontainer;
+    border: 2px solid gray;
+    margin-top: 10px;
+    padding: 30px 20px;
+    margin-left: 200px;
+    justify-content: center;
+    margin-right: 200px;
+    background-color: white;
+}
+
+.result {
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(108, 69, 180);
+    color:yellow;
+    border: 1px solid white;
+    grid-area: result;
+    text-align: center;
+    width: 500px;
+    border-radius: 20px;
+    justify-content: center;
+    
+}
+
+.box-result {
+    font-size: x-large;
+    color: red;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+#gainorloss {
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+.label {
+    font-size: x-large;
+}

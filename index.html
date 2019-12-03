@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+  <script src="./jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./dietapp.js"></script>
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <title>Diet App</title>
+</head>
+
+<body>
+    <div class="all">
+        <div class="header">
+            <h1>Are you ready to calculate your daily calories?</h1>
+        </div>
+        <div class="content">
+            <h2>If you want to have new results, you can't stick with your old habits!</h2>
+        </div>
+        <div class="sidebar">
+            <!-- <div id="weightgainbutton">
+                <button class="choose">For weight gain</button>
+            </div>
+            <div id="weightlossbutton">
+                <button class="choose">For weight loss</button>
+            </div> -->
+            <div>
+                <label for="gainorloss" class="label">Do you want to gain weight or lose weight?</label>
+                <br>
+                <select name="gainorloss" id="gainorloss" class="changeoption">
+                    <option value="gain">Weight Gain</option>
+                    <option value="loss">Weight Loss</option>
+                </select>
+            </div>
+            <p>
+                <strong>Please note that all of the fields are required.</strong>
+            </p>
+            <p>
+                <strong>Important:</strong> weight change is not recommended to exceed 2 lbs per week (gain and loss).
+            </p>
+            <p>
+                <strong>Follow me on Instagram: @ted.cjz</strong>
+            </p>
+        </div>
+        <div class="infocontainer">
+            <div class="weightchange">
+                <div>
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="age">How old are you?</label>
+                    <input type="number" class="age" required> years old
+                </div>
+                <div>
+                    <label for="weight">What is your current weight?</label>
+                    <input type="number" class="weight" required> kg
+                </div>
+                <div>
+                    <label for="height">Height?</label>
+                    <input type="number" id="height"> cm
+                </div>
+                <div>
+                    <label for="activeness">How active are you?</label>
+                    <select name="activeness" id="activeness" required>
+                        <option value="not-active">Not active</option>
+                        <option value="active">Active</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="change">Desired weight change per week:</label>
+                    <input type="text" class='change' required> lbs/week
+                </div>
+                <div class="button">
+                    <button class="submit">Submit</button>
+                </div>
+                <br>
+            </div>
+            <!-- <div class="weightgain">
+                <div>
+                    <label for="age">What is your age?</label>
+                    <input type="number" class="age"> years old
+                </div>
+                <div>
+                    <label for="weight">What is your current weight?</label>
+                    <input type="number" class="weight"> kg
+                </div>
+                <div>
+                    <label for="activeness">How active are you?</label>
+                    <select name="activeness" id="activeness">
+                        <option value="not-active">Not active</option>
+                        <option value="active">Active</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="submit">Submit</button>
+                </div>
+                <br>
+            </div> -->
+        </div>
+        <div class="result">
+            <h2 id="result">Result below:</h2>
+        </div>
+        <div class="resultcontainer">
+            <div class="box-result">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
